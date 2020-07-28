@@ -8,5 +8,10 @@
         Title="DemoView" Height="450" Width="800">
     <Grid>
         <Button Content="Test" MaxHeight="50" MaxWidth="150"/>
+
+        <CheckBox/>
+        <ComboBox/>
+        <GroupBox/>
+        <TextBox/>
     </Grid>
 </Window>
