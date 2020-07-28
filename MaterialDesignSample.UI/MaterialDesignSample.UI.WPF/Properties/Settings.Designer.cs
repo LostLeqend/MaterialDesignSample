@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaterialDesignSample.UI.Properties
+namespace MaterialDesignSample.UI.WPF.Properties
 {
 
 
