@@ -3,15 +3,55 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MaterialDesignSample.Demo.View"
         mc:Ignorable="d"
         Title="DemoView" Height="450" Width="800">
     <Grid>
-        <Button Content="Test" MaxHeight="50" MaxWidth="150"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        <CheckBox/>
-        <ComboBox/>
-        <GroupBox/>
-        <TextBox/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Text="Week"/>
+            <ComboBox/>
+        </StackPanel>
+
+        <GroupBox Grid.Row="1" Header="Expenses">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Column="0" Content="Test"/>
+                <Button Grid.Column="1" Content="Test" MaxHeight="50" MaxWidth="150" />
+                <TextBox Grid.Column="2"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="2" Header="Time">
+            <Grid>
+                <Button Content="Test" MaxHeight="50" MaxWidth="150" />
+
+                <CheckBox/>
+                <TextBox/>
+            </Grid>
+        </GroupBox>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="Signature"/>
+
+            <Button Grid.Column="1" Content="Save" />
+            <Button Grid.Column="2" Content="Submit for Approval" />
+        </Grid>
     </Grid>
 </Window>

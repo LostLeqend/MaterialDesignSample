@@ -1,11 +1,12 @@
-﻿<Application x:Class="MaterialDesignSample.Demo.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="View/DemoView.xaml">
+﻿<Application
+    x:Class="MaterialDesignSample.Demo.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="View/DemoView.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/MaterialDesignSample.UI.WPF;component/Themes/MaterialDesignSampleStyles.xaml"/>
+                <ResourceDictionary Source="/MaterialDesignSample.UI.WPF;component/Themes/MaterialDesignSampleStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
