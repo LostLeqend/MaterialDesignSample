@@ -68,6 +68,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Theme.cs" />
+    <Compile Include="ThemeEnums.cs" />
+    <Compile Include="ThemeResourceDictionary.cs" />
+    <Compile Include="ThemeResourceExtension.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
