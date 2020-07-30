@@ -110,7 +110,7 @@
                 <Border x:Name="dropDownBorder"
                         MinWidth="{Binding ActualWidth, ElementName=templateRoot}"
                         MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                        Background="{theme:ThemeResource ResourceKey=ControlBackground}"
+                        Background="{theme:ThemeResource ResourceKey=ControlContentBackground}"
                         BorderBrush="{theme:ThemeResource ResourceKey=ControlBorder}"
                         BorderThickness="1">
                     <ScrollViewer x:Name="DropDownScrollViewer">
