@@ -21,8 +21,11 @@
                 Content="Switch theme"
                 IsDefault="True"/>
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
-                    IsEnabled="{Binding ElementName=CbEnabledInput, Path=IsChecked}">
+        <GroupBox Header="GroupBox"
+                  Width="200"
+                  HorizontalAlignment="Center" VerticalAlignment="Center"
+                  IsEnabled="{Binding ElementName=CbEnabledInput, Path=IsChecked}">
+        <StackPanel>
             <TextBlock Margin="0,8"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
@@ -41,5 +44,6 @@
                 <ComboBoxItem Content="Item 3"/>
             </ComboBox>
         </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
