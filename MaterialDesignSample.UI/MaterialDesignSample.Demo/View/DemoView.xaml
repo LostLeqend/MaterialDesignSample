@@ -28,8 +28,8 @@
                        VerticalAlignment="Center"
                        Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"
                        Text="This is a test."/>
-            <Button Margin="0,8"
-                    Content="Test"/>
+            <Button Margin="0,8" Content="Button"/>
+            <CheckBox Margin="0,8" Content="CheckBox"/>
         </StackPanel>
     </Grid>
 </Window>
