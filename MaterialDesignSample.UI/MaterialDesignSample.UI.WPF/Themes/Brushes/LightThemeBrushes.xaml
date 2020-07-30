@@ -4,8 +4,8 @@
                     x:Class="MaterialDesignSample.UI.WPF.Brushes.LightThemeBrushes">
     
     <!-- Content Areas -->
-    <SolidColorBrush x:Key="ContentBackground" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="ContentForeground" Color="#3F3F3F"/>
+    <SolidColorBrush x:Key="ContentBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ContentForeground" Color="#FF3F3F3F"/>
 
     <!-- Controls -->
     <SolidColorBrush x:Key="ControlForeground" Color="#FF3F3F3F"/>
@@ -38,10 +38,10 @@
     <!-- Windows -->
     <SolidColorBrush x:Key="WindowBorder" Color="#FF616D7B"/>
     <SolidColorBrush x:Key="WindowActiveBorder" Color="#FF833AB4"/>
-    <SolidColorBrush x:Key="WindowControlMouseOverBackground" Color="#FF000000"/>
-    <LinearGradientBrush x:Key="WindowHeaderBackground" StartPoint="0,0" EndPoint="0,1">
-        <GradientStop Color="#FF833AB4" Offset="1"/>
-        <GradientStop Color="#FFFD1D1D" Offset="0.5"/>
+    <SolidColorBrush x:Key="WindowControlMouseOverBackground" Color="#FF222529"/>
+    <LinearGradientBrush x:Key="WindowHeaderBackground" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#FF833AB4" Offset="0"/>
+        <GradientStop Color="#FFFD1D1D" Offset="1"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="WindowHeaderForeground" Color="#FFFFFFFF"/>
 

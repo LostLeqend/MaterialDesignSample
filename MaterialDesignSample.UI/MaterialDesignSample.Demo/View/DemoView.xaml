@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         xmlns:gui="clr-namespace:MaterialDesignSample.UI.WPF;assembly=MaterialDesignSample.UI.WPF"
-        Title="DemoView" Height="450" Width="800">
+        Title="DemoView" 
+        Width="800" Height="450"
+        Style="{DynamicResource WindowStyle}">
     <Grid Background="{gui:ThemeResource ResourceKey=ContentBackground}">
         <CheckBox x:Name="CbEnabledInput"
                 Margin="8"
@@ -13,13 +15,6 @@
                 VerticalAlignment="Top"
                 Content="IsEnabled"
                 IsChecked="True"/>
-        <Button Margin="8"
-                Padding="8,0"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Top"
-                Click="ButtonBase_OnClick"
-                Content="Switch theme"
-                IsDefault="True"/>
 
         <GroupBox Header="GroupBox"
                   Width="200"
