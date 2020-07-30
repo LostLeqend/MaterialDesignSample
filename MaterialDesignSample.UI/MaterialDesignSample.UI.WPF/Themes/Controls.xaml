@@ -1,5 +1,7 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:gui="clr-namespace:MaterialDesignSample.UI.WPF">
     <ResourceDictionary.MergedDictionaries>
+        <gui:ThemeResourceDictionary/>
         <ResourceDictionary Source="Styles/ButtonStyles.xaml"/>
         <ResourceDictionary Source="Styles/CheckBoxStyles.xaml"/>
         <ResourceDictionary Source="Styles/ComboBoxStyles.xaml"/>

@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Documents;
 using System.Windows.Media;
+using MaterialDesignSample.UI.WPF.Brushes;
 
 namespace MaterialDesignSample.UI.WPF
 {
@@ -23,16 +27,40 @@ namespace MaterialDesignSample.UI.WPF
 
         public static ThemeType ThemeType { get; set; } = ThemeType.Light;
 
-        private static void LoadThemeType(ThemeType type)
+        public static void LoadThemeType(ThemeType type)
         {
             ThemeType = type;
 
             switch (type)
             {
                 case ThemeType.Light:
+                    LoadLightTheme();
                     break;
                 case ThemeType.Dark:
+                    LoadDarkTheme();
                     break;
+            }
+        }
+
+        private static void LoadLightTheme()
+        {
+            var lightThemeBrushes = new LightThemeBrushes();
+            lightThemeBrushes.InitializeComponent();
+
+            foreach (DictionaryEntry lightThemeBrush in lightThemeBrushes)
+            {
+                SetResource(lightThemeBrush.Key.ToString(), lightThemeBrush.Value);
+            }
+        }
+
+        private static void LoadDarkTheme()
+        {
+            var darkThemeBrushes = new DarkThemeBrushes();
+            darkThemeBrushes.InitializeComponent();
+
+            foreach (DictionaryEntry darkThemeBrush in darkThemeBrushes)
+            {
+                SetResource(darkThemeBrush.Key.ToString(), darkThemeBrush.Value);
             }
         }
 
@@ -46,11 +74,6 @@ namespace MaterialDesignSample.UI.WPF
         internal static void SetResource(object key, object resource)
         {
             ResourceDictionary[key] = resource;
-        }
-
-        internal static Color ColorFromHex(string colorHex)
-        {
-            return (Color?) ColorConverter.ConvertFromString(colorHex) ?? Colors.Transparent;
         }
     }
 }

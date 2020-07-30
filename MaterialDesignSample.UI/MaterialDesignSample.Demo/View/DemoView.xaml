@@ -4,54 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
+        xmlns:gui="clr-namespace:MaterialDesignSample.UI.WPF;assembly=MaterialDesignSample.UI.WPF"
         Title="DemoView" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Grid Background="{gui:ThemeResource ResourceKey=ContentBackground}">
+        <CheckBox x:Name="CbEnabledInput"
+                Margin="8"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="IsEnabled"
+                IsChecked="True"/>
+        <Button Margin="8"
+                Padding="8,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Click="ButtonBase_OnClick"
+                Content="Switch theme"
+                IsDefault="True"/>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <TextBlock Text="Week"/>
-            <ComboBox/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
+                    IsEnabled="{Binding ElementName=CbEnabledInput, Path=IsChecked}">
+            <TextBlock Margin="0,8"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"
+                       Text="This is a test."/>
+            <Button Margin="0,8"
+                    Content="Test"/>
         </StackPanel>
-
-        <GroupBox Grid.Row="1" Header="Expenses">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <CheckBox Grid.Column="0" Content="Test"/>
-                <Button Grid.Column="1" Content="Test" MaxHeight="50" MaxWidth="150" />
-                <TextBox Grid.Column="2"/>
-            </Grid>
-        </GroupBox>
-
-        <GroupBox Grid.Row="2" Header="Time">
-            <Grid>
-                <Button Content="Test" MaxHeight="50" MaxWidth="150" />
-
-                <CheckBox/>
-                <TextBox/>
-            </Grid>
-        </GroupBox>
-
-        <Grid Grid.Row="3">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Grid.Column="0" Text="Signature"/>
-
-            <Button Grid.Column="1" Content="Save" />
-            <Button Grid.Column="2" Content="Submit for Approval" />
-        </Grid>
     </Grid>
 </Window>
