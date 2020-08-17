@@ -17,12 +17,12 @@ namespace MaterialDesignSample.UI.WPF
                     return _resourceDictionary;
 
                 _resourceDictionary = new ResourceDictionary();
-                LoadThemeType(ThemeType.Light);
+                LoadThemeType(ThemeType.Dark);
                 return _resourceDictionary;
             }
         }
 
-        public static ThemeType ThemeType { get; set; } = ThemeType.Light;
+        public static ThemeType ThemeType { get; set; }
 
         public static void LoadThemeType(ThemeType type)
         {
