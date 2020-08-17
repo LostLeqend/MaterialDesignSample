@@ -14,7 +14,9 @@ using System.Windows.Markup;
 [assembly: ComVisible(false)]
 [assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
 
-[assembly: XmlnsDefinition("http://materialdesignsample.com/styles", "MaterialDesignSampleStyles.xaml")]
+[assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF")]
+[assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF.Controls")]
+[assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF.Converters")]
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

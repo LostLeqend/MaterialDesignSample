@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:gui="clr-namespace:MaterialDesignSample.UI.WPF.Controls">
+
+    <ControlTemplate x:Key="IconAdd" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconClose" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconDelete" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconLogo" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconMaximize" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M32 0v13l-5-5-6 6-3-3 6-6-5-5zM14 21l-6 6 5 5h-13v-13l5 5 6-6z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconMinimize" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconRestore" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M14 18v13l-5-5-6 6-3-3 6-6-5-5zM32 3l-6 6 5 5h-13v-13l5 5 6-6z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconMaterialDesignSample" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconTheme" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12zM10 16c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6z" 
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IconExpand" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas Width="32" Height="32" SnapsToDevicePixels="False" UseLayoutRounding="False">
+                <Path Data="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"
+                      Fill="{TemplateBinding Foreground}"/>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>

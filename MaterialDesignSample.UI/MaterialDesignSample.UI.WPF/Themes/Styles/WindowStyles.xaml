@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:Class="MaterialDesignSample.UI.WPF.Themes.Styles.WindowStyles"
                     xmlns:converters="clr-namespace:MaterialDesignSample.UI.WPF.Converters"
-                    xmlns:theme="clr-namespace:MaterialDesignSample.UI.WPF">
+                    xmlns:theme="clr-namespace:MaterialDesignSample.UI.WPF"
+                    xmlns:controls="clr-namespace:MaterialDesignSample.UI.WPF.Controls">
 
     <converters:ObjectToVisiblityConverter x:Key="ObjectToVisibilityConverter"/>
 
@@ -29,34 +30,38 @@
                         <Button x:Name="CloseButton"
                                 Margin="4,0,8,0"
                                 Click="OnCloseClick"
-                                Content="X"
                                 DockPanel.Dock="Right"
-                                Style="{DynamicResource WindowButtonStyle}"/>
+                                Style="{DynamicResource WindowButtonStyle}">
+                            <controls:XamlImage Template="{DynamicResource IconClose}"/>
+                        </Button>
                         <Button x:Name="MaximizeRestoreButton"
                                 Margin="4,0,8,0"
                                 Click="OnMaximzeRestoreClick"
-                                Content="+"
                                 DockPanel.Dock="Right"
-                                Style="{DynamicResource WindowButtonStyle}"/>
+                                Style="{DynamicResource WindowButtonStyle}">
+                            <controls:XamlImage Template="{DynamicResource IconMaximize}"/>
+                        </Button>
                         <Button x:Name="MinimizeButton"
                                 Margin="4,0,8,0"
                                 Click="OnMinimizeClick"
-                                Content="-"
                                 DockPanel.Dock="Right"
-                                Style="{DynamicResource WindowButtonStyle}"/>
+                                Style="{DynamicResource WindowButtonStyle}">
+                            <controls:XamlImage Template="{DynamicResource IconMinimize}"/>
+                        </Button>
                         <Button x:Name="ThemeButton"
                                 Margin="4,0,8,0"
                                 Click="OnThemeClick"
-                                Content="T"
                                 DockPanel.Dock="Right"
-                                Style="{DynamicResource WindowButtonStyle}"/>
+                                Style="{DynamicResource WindowButtonStyle}">
+                            <controls:XamlImage Template="{DynamicResource IconTheme}"/>
+                        </Button>
                         <Rectangle Width="1" Height="16" Margin="8,0"
                                    VerticalAlignment="Center"
                                    DockPanel.Dock="Right"
                                    Fill="{theme:ThemeResource ResourceKey=WindowHeaderForeground}"/>
-                        <Rectangle Width="16" Height="16" DockPanel.Dock="Right"
-                                   Stroke="{theme:ThemeResource ResourceKey=WindowHeaderForeground}"
-                                   StrokeThickness="1"/>
+                        <controls:XamlImage Width="16" Height="16" DockPanel.Dock="Right"
+                                            Foreground="{theme:ThemeResource ResourceKey=WindowHeaderForeground}"
+                                            Template="{DynamicResource IconMaterialDesignSample}"/>
                     </DockPanel>
                 </Grid>
                 <Grid Grid.Row="1">
@@ -78,7 +83,11 @@
             <Trigger Property="WindowState" Value="Maximized">
                 <Setter TargetName="RootBorder" Property="BorderThickness" Value="8"/>
                 <Setter TargetName="RootBorder" Property="BorderBrush" Value="Transparent"/>
-                <Setter TargetName="MaximizeRestoreButton" Property="Content" Value="R"/>
+                <Setter TargetName="MaximizeRestoreButton" Property="Content">
+                    <Setter.Value>
+                        <controls:XamlImage Template="{DynamicResource IconRestore}"/>
+                    </Setter.Value>
+                </Setter>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>

@@ -4,7 +4,7 @@
 
     <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type Button}">
         <Grid>
-            <Border x:Name="border" 
+            <Border x:Name="border"
                 BorderBrush="{TemplateBinding BorderBrush}" 
                 BorderThickness="{TemplateBinding BorderThickness}" 
                 Background="{TemplateBinding Background}" 

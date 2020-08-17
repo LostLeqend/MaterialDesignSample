@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        xmlns:gui="clr-namespace:MaterialDesignSample.UI.WPF;assembly=MaterialDesignSample.UI.WPF"
+        xmlns:gui="http://materialdesignsample.com/ui/wpf"
         Title="DemoView" 
         Width="800" Height="450"
         Style="{DynamicResource WindowStyle}">
