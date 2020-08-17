@@ -58,6 +58,7 @@
     <Compile Include="Controls\XamlImage.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\ObjectToVisiblityConverter.cs" />
+    <Compile Include="Converters\XamlImageKeyToImageSourceConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

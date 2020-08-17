@@ -7,6 +7,8 @@
         xmlns:gui="http://materialdesignsample.com/ui/wpf"
         Title="DemoView" 
         Width="800" Height="450"
+        Icon="{Binding Source={StaticResource IconLogo},  
+                       Converter={gui:XamlImageKeyToImageSourceConverter Height=16, Width=16, ForegroundResourceKey=WindowHeaderForeground}}"
         Style="{DynamicResource WindowStyle}">
 
     <Window.Resources>
