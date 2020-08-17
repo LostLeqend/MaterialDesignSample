@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="AttachedProperties\ButtonProperties.cs" />
     <Compile Include="Controls\XamlImage.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\ObjectToVisiblityConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -8,6 +8,11 @@
         Title="DemoView" 
         Width="800" Height="450"
         Style="{DynamicResource WindowStyle}">
+
+    <Window.Resources>
+        <gui:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" IsInverse="True"/>
+    </Window.Resources>
+
     <Grid Background="{gui:ThemeResource ResourceKey=ContentBackground}">
         <CheckBox x:Name="CbEnabledInput"
                 Margin="8"
@@ -26,9 +31,13 @@
                        VerticalAlignment="Center"
                        Foreground="{gui:ThemeResource ResourceKey=ContentForeground}"
                        Text="This is a test."/>
+
                 <Button Margin="0,8" Content="Button"/>
-                <Button Margin="0,8" Content="Button with CornerRadius" gui:ButtonProperties.CornerRadius="4"/>
+                <Button Margin="0,8" Content="Button with CornerRadius" 
+                        gui:ButtonProperties.CornerRadius="4"/>
+
                 <CheckBox Margin="0,8" Content="CheckBox"/>
+
                 <ComboBox Margin="0,8">
                     <ComboBoxItem Content="Item 1" IsSelected="True"/>
                     <ComboBoxItem Content="Item 2"/>
@@ -39,7 +48,17 @@
                     <ComboBoxItem Content="Item 2"/>
                     <ComboBoxItem Content="Item 3"/>
                 </ComboBox>
+
                 <TextBox Margin="0,8"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                    <CheckBox x:Name="ValueInput" Content="Test"/>
+                    <gui:XamlImage Height="16" Width="16"
+                                   Margin="8,0,0,0"
+                                   Template="{DynamicResource IconTheme}"
+                                   Visibility="{Binding ElementName=ValueInput, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                </StackPanel>
+
             </StackPanel>
         </GroupBox>
     </Grid>
