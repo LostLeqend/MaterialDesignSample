@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:theme="clr-namespace:MaterialDesignSample.UI.WPF">
+                    xmlns:theme="clr-namespace:MaterialDesignSample.UI.WPF"
+                    xmlns:ap="clr-namespace:MaterialDesignSample.UI.WPF.AttachedProperties">
 
     <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type Button}">
         <Grid>
@@ -8,7 +9,7 @@
                 BorderBrush="{TemplateBinding BorderBrush}" 
                 BorderThickness="{TemplateBinding BorderThickness}" 
                 Background="{TemplateBinding Background}" 
-                SnapsToDevicePixels="true">
+                CornerRadius="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(ap:ButtonProperties.CornerRadius)}">
                 <ContentPresenter x:Name="contentPresenter" 
                               Focusable="False" 
                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
@@ -89,6 +90,7 @@
         <Setter Property="IsTabStop" Value="False"/>
         <Setter Property="Focusable" Value="False"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="ap:ButtonProperties.CornerRadius" Value="0"/>
         <Setter Property="Template" Value="{StaticResource WindowButtonTemplate}"/>
     </Style>
 

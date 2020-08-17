@@ -15,6 +15,7 @@ using System.Windows.Markup;
 [assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
 
 [assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF")]
+[assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF.AttachedProperties")]
 [assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF.Controls")]
 [assembly: XmlnsDefinition("http://materialdesignsample.com/ui/wpf", "MaterialDesignSample.UI.WPF.Converters")]
 
